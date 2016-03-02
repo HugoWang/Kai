@@ -1,0 +1,167 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+
+@font-face {
+    font-family: 'myfont';
+    src: url('fonts/RobotoCondensed-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('fonts/Junction.otf'); 
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'myfont';
+  color: #111111;
+  background: #eee;
+}
+
+h1 {
+  padding-top: 50px;
+  padding-bottom:10px;
+  font-weight: 400;
+  text-align: center;
+  font-family: 'myfont2';
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+  font-family: 'myfont';
+}
+
+main {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+  padding: 20px 0 0;
+  border-top: 1px solid #ddd;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label[for*='1']:before {
+  content: '\f015';
+}
+
+label[for*='2']:before {
+  content: '\f15c';
+}
+
+label[for*='3']:before {
+  content: '\f09b';
+}
+
+label[for*='4']:before {
+  content: '\f003';
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+body { 
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(../images/2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#copyright {
+	margin-top:10px;
+	font-size: 1em;
+	line-height: 1em;
+	text-align:center;
+	color:#cccccc;
+}
+
+.icon:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+ul {
+list-style: none;
+display: inline;
+overflow-x:hidden;
+white-space:nowrap; 
+height: 30px;
+width: 100%;
+}
+
+li {
+    display: inline;
+}
+
+
